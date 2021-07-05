@@ -9,7 +9,7 @@ categories:
 안녕하세요. 이번 포스트는 블로그 포스트 추가 방법을 알려드리려고 합니다. 저희는 Git을 통해 소스 코드를 저장하고 편집하는 방법을 사용할것입니다.  Git으로 소스 코드를 관리하고 개발 및 편집을 하려면 먼저 저장소를 초기화하거나 원격 저장소를 클론(Clone)해와야합니다. 클론(Clone)을 사용하면 원격 저장소의 코드를 내 컴퓨터에 받아올 수 있고 로컬 저장소(.git)도 자동으로 생기게 됩니다.  이번글에서는 git clone 명령어의 사용법에 대해서 자세히 소개하고 포스트 추가방법까지 상세히 설명해드리겠습니다. 
 
 
-진행하기전 몇가지 설치 및 다운로드를 해야하는데요, 여기와 같습니다:
+진행하기전 몇가지 설치 및 다운로드를 해야합니다. 여기와 같습니다:
 
 ##### 1. Node.js <a href="https://nodejs.org/ko/download/" target="_blank"><span style="color:blue">다운로드 </span></a>
 ##### 2. Git  <a href="https://git-scm.com/" target="_blank"><span style="color:blue">다운로드 </span></a>

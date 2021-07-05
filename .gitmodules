@@ -1,0 +1,3 @@
+[submodule "themes/vntgblogtheme"]
+	path = themes/vntgblogtheme
+	url = https://github.com/VntgCorp/vntgblogtheme

@@ -1,7 +1,7 @@
 ---
 title: 기존 버전관리 및 CICD 현황
 date: 2021-05-31 16:05:46
-thumbnail: https://blog.kakaocdn.net/dn/tNuBf/btqLvgptxph/HZTc8AYYEwnjnnQKFBaKc1/img.png
+thumbnail: ../image/cicd_title.png
 categories: 
 - [CICD]
 ---
@@ -456,4 +456,4 @@ jobs:
 <p>&nbsp;</p>
 
 **<font size="3">Github staging-log</font>**
-<center><img src="../image/github-03=staging-log.png" class="img-responsive"></center>
+<center><img src="../image/github-03-staging-log.png" class="img-responsive"></center>

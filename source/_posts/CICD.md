@@ -109,8 +109,8 @@ Gitlab Ultimate, Github Enterprise 는 주로 보안과 관련한 기능 추가
 * <a href="https://docs.github.com/en/actions/guides" target="_top"><span style="color:blue">Github 액션 가이드 </span></a>
 
 **Gitlab CICD의 장점은 environments 를 이용하여 각 환경(staging, prod)에 대한 배포를 손쉽게 하고 기록을 확인가능한 점**  
-* Github 은 environments<a href="https://docs.github.com/en/actions/reference/environments" target="_top"><span style="color:blue">environments </span></a> 기능을 public repo나 enterprise plan 일 경우에만 지원하고 github team 의 private repo에는 지원 안함  
-* Github 에서 environments 기능은 리뷰어의 <a href="2020-12-15-github-actions-environments-environment-protection-rules-and-environment-secrets-beta/" target="_top"><span style="color:blue">승인 </span></a>이 있어야 배포 가능/트리거 발생후 일정 시간이 지나야 배포 가능/특정 브랜치만 배포 가능  
+* Github 은 <a href="https://docs.github.com/en/actions/reference/environments" target="_blank"><span style="color:blue">environments </span></a> 기능을 public repo나 enterprise plan 일 경우에만 지원하고 github team 의 private repo에는 지원 안함  
+* Github 에서 environments 기능은 리뷰어의 <a href="https://github.blog/changelog/2020-12-15-github-actions-environments-environment-protection-rules-and-environment-secrets-beta/" target="_blank"><span style="color:blue">승인 </span></a>이 있어야 배포 가능/트리거 발생후 일정 시간이 지나야 배포 가능/특정 브랜치만 배포 가능  
 
 
 * * * 

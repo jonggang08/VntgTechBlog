@@ -132,9 +132,10 @@ http://127.0.0.1:8000/openapi.json
 
 여기까지와 실제 API간의 인터랙션을 위한 기본 학습 내용은 아래 URL을 참조하길 바란다. 문서가 매우 잘 되어 있어서 자습하기에도 좋다. 음 설마 API를 하려고 하니 GET, PUT, DELETE, UPDATE는 ... 당연히 알거라 생각해서 패스한다. 
 
+<center><img src="../image/fastapi4.jpeg" class="img-responsive"></center>
+
 ### <a href="https://fastapi.tiangolo.com/ko/tutorial/first-steps/" target="_blank"><span style="color:blue">첫걸음 - FastAPI</span></a>
 
-<center><img src="../image/fastapi4.jpeg" class="img-responsive"></center>
 
 실제 제목이었던 내용인 FastAPI, WebSocket, 그리고 Docker에 대한 내용을 이제 알아보....도록 합니다.
 

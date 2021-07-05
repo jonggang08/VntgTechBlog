@@ -1,7 +1,7 @@
 ---
 title: 포스트 추가 방법
 date: 2021-06-09 10:05:46
-thumbnail: ../image/manualthumb.jpg
+thumbnail: https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80
 categories: 
 - [Static Site Generator]
 ---
@@ -34,23 +34,36 @@ cd BlogPost
 git clone https://github.com/VntgCorp/vntg-blog.git
 ```
 
-### 3. Text Editor를 통해 저장된 폴더를 열면 저장 소스코드를 볼수 있습니다.
+### 3. vntg-blog directory의 themes directory 들어가서 vntgblogtheme 테마를 클론해줍니다. 
 
-<center><img src="../image/newpostmanual2.png" class="img-responsive"></center>
+```
+cd vntg-blog 
+cd themes
+git clone https://github.com/VntgCorp/vntgblogtheme.git
+```
+
+* 현재 directory는 이와 같습니다. 
+BlogPost -> vntg-blog -> themes 
+
+### 4. 새로 생성된 폴더를 Visual Studio Code나 다른 text editor로 오픈한후 root 폴더에 있는 _config.yml theme를 vntgblogtheme으로 바꿔줍니다.
+
+```
+# Extensions
+theme: vntgblogtheme
+```
+
+### 5. source\_posts으로 가서 우클릭후 NewFile을 생성합니다. 파일이름을 적고 .md로 맞춰줍니다. (md는 Markdown 파일이라는것을 알립니다.)
 
 
-### 4. source\_posts으로 가서 우클릭후 NewFile을 생성합니다. 파일이름을 적고 .md로 맞춰줍니다. (md는 Markdown 파일이라는것을 알립니다.)
-
-
-### 5. 포스트 내용 삽입전 포스트 제목, 썸네일, 작성일지, 썸네일 그리고 카테고리(필요시)를 적어줍니다. 
+### 6. 포스트 내용 삽입전 포스트 제목, 썸네일, 작성일지, 썸네일 그리고 카테고리(필요시)를 적어줍니다. 
 
 <center><img src="../image/newpostmanual3.png" class="img-responsive"></center>
 
-### 6. 포스트 내용 삽입을 해줍니다. 마크다운으로 쉽게 콘텐츠 삽입이 가능합니다. <a href="https://www.markdownguide.org/basic-syntax/" target="_blank"><span style="color:blue">마크다운 다큐멘테이션</span></a> 을 통해 이미지는 물론 BlockQuote나 폰트 사이즈도 쉽게 바꿀수 있습니다.
+### 7. 포스트 내용 삽입을 해줍니다. 마크다운으로 쉽게 콘텐츠 삽입이 가능합니다. <a href="https://www.markdownguide.org/basic-syntax/" target="_blank"><span style="color:blue">마크다운 다큐멘테이션</span></a> 을 통해 이미지는 물론 BlockQuote나 폰트 사이즈도 쉽게 바꿀수 있습니다.
 
 - 포스트 내용 삽입 중 블로그 확인을 하고 싶다면 명령프롬프트에서 hexo server를 입력하시면 localhost 링크가 있습니다. 그 링크를 타고 들어오시면 신규 포스트 추가 내용을 로컬PC에서 확인이 가능합니다.
 
-### 7. 깃허브 페이지에 배포하기.
+### 8. 깃허브 페이지에 배포하기.
 
 배포하기전 _config.yml파일에 들어가서 배포할 저장소가 맞는지 확인합니다. 저희 공식 기술블로그 repo는 아래와 같습니다. 
 ```
@@ -73,9 +86,9 @@ hexo deploy
 hexo clean
 ```
 
-### 8. 깃허브 저장소에 소스 저장하기
+### 9. 깃허브 저장소에 소스 저장하기
 
-위의 배포 과정은 보여지는 페이지를 저장한 것이고, 이제 실제 소스를 깃허브 저장소에 저장해야합니다. 그래야 다른분이 포스트 추가가 가능할테니까요. 아래 코드를 입력하시면 소스들이 처음에 클론 받았던 저장소(vntg-blog로 푸쉬된것을 확인할수 있습니다. 
+위의 배포 과정은 보여지는 페이지를 저장한 것이고, 이제 실제 소스와 이미지들을 깃허브 저장소에 저장해야합니다. 그래야 다른분이 포스트 추가가 가능할테니까요. 아래 코드를 입력하시면 소스들이 처음에 클론 받았던 저장소(vntg-blog로 푸쉬된것을 확인할수 있습니다. 
 
 ```
 git init
@@ -89,12 +102,15 @@ git push origin master
 ```
 git pull origin master --allow-unrelated-histories
 ```
+직접 vntgblogtheme 테마를 수정하지 않는 이상 vntgblogtheme는 건드르지 않습니다. 
+
 * * *
 
 ### 주의사항: 
 저희 기술블로그는 <b>Hexo</b>를 기반으로 만든 페이지입니다. 
-Hexo 블로그는 2개의 저장소(repo)를 사용합니다. 한개는 <a href="https://github.com/VntgCorp/VntgCorp.github.io" target="_blank"><span style="color:blue">배포 페이지</span></a>를 저장하는 저장소로 사용되며 다른 한개는<a href="https://github.com/VntgCorp/vntg-blog.git" target="_blank"><span style="color:blue">실제 소스</span></a> 를 저장하는 저장소로 사용됩니다. 
+
+저희 Hexo 블로그는 3개의 저장소(repo)를 사용합니다. 한개는 <a href="https://github.com/VntgCorp/VntgCorp.github.io" target="_blank"><span style="color:blue">배포 페이지</span></a>를 저장하는 저장소로 사용되며 다른 한개는 <a href="https://github.com/VntgCorp/vntg-blog.git" target="_blank"><span style="color:blue">실제 소스</span></a> 를 저장하는 저장소로 사용됩니다. 마지막으로 <a href="https://github.com/VntgCorp/vntgblogtheme" target="_blank"><span style="color:blue">테마 페이지</span></a>는 저희 기술블로그 테마를 클론할때만 사용합니다.
+
 클론/푸쉬/커밋등을 하는 중에 다른 저장소를 건드리면 복구가 힘들어지고 골치가 아플수 있습니다. (저처럼.. ㅠㅠ)
 항상 주의있게 어떤 저장소를 건드리는지 확인하시면 좋으실것 같습니다.
 
-##### 이상으로 기술블로그 포스트 추가 방법을 마치겠습니다. 감사합니다. :)

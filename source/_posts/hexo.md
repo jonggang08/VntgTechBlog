@@ -1,7 +1,7 @@
 ---
 title: Hexo 설치 및 사용 매뉴얼
 date: 2021-06-03 11:05:46
-thumbnail: ../image/hexothumb.jpg
+thumbnail: http://flamingotiger.github.io/image/thumb/hexo-thumb.jpg
 lede: dd
 
 categories: 

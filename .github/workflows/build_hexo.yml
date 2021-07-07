@@ -29,11 +29,9 @@ jobs:
           git config --global user.name 'chanhee-han'
           git config --global user.email 'chanhee.han@vntgcorp.com'
           sed -i "s/__GITHUB_TOKEN__/${{ secrets.TOKEN_HEXO_THEME }}/" _config.yml
-          echo ${{ secrets.TOKEN_HEXO_THEME }}
-
+          
       - name: THEME_INSTALL
-        run: |
-          git submodule update --init --remote --recursive
+        run: git submodule update --init --remote --recursive
 
       - name: NPM_INSTALL
         run: npm install

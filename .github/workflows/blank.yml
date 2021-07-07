@@ -28,7 +28,7 @@ jobs:
         run: |
           git config --global user.name 'chanhee-han'
           git config --global user.email 'chanhee.han@vntgcorp.com'
-          sed -i "s/__GITHUB_TOKEN__/${{ secrets.TOKEN_FOR_HEXO }}/" _config.yml
+          sed -i "s/__GITHUB_TOKEN__/${{ secrets.TOKEN_HEXO_THEME }}/" _config.yml
 
       - name: THEME_INSTALL
         run: |

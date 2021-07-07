@@ -23,47 +23,36 @@ categories:
 
 <center><img src="../image/newpostmanual1.png" class="img-responsive"></center>
 
-### 2. 명령 프롬프트에서 생성한 폴더 directory로 이동후 클론(Clone)명령어를 활용해 Github의 vntg-blog저장소를 받아주세요. 
+### 2. 명령 프롬프트에서 생성한 폴더 directory로 이동후 클론(Clone)명령어를 활용해 Github의 vntg-blog저장소를 받아주세요. --recurse-modules은 submodule인 vntgblogtheme폴더까지 한번에 긁어서 clone해주는 명령어입니다. 
 
 ```
 cd BlogPost
-git clone https://github.com/VntgCorp/vntg-blog.git
+git clone --recurse-submodules https://github.com/VntgCorp/vntg-blog.git
 ```
 
-### 3. vntg-blog directory의 themes directory 들어가서 vntgblogtheme 테마를 클론해줍니다. 
 
-```
-cd vntg-blog 
-cd themes
-git clone https://github.com/VntgCorp/vntgblogtheme.git
-```
-
-* 현재 directory는 이와 같습니다. 
-BlogPost -> vntg-blog -> themes 
+### 3. Visual Studo Code나 다른 text-editor로 폴더를 오픈 후 source\_posts으로 가서 우클릭후 NewFile을 생성합니다. 파일이름을 적고 .md로 맞춰줍니다. (md는 Markdown 파일이라는것을 알립니다.)
 
 
-### 4. Visual Studo Code나 다른 text-editor로 폴더를 오픈 후 source\_posts으로 가서 우클릭후 NewFile을 생성합니다. 파일이름을 적고 .md로 맞춰줍니다. (md는 Markdown 파일이라는것을 알립니다.)
-
-
-### 5. 포스트 내용 삽입전 포스트 제목, 썸네일, 작성일지, 썸네일 그리고 카테고리(필요시)를 적어줍니다. 
+### 4. 포스트 내용 삽입전 포스트 제목, 썸네일, 작성일지, 썸네일 그리고 카테고리(필요시)를 적어줍니다. 
 
 <center><img src="../image/newpostmanual3.png" class="img-responsive"></center>
 
-### 6. 포스트 내용 삽입을 해줍니다. 마크다운으로 쉽게 콘텐츠 삽입이 가능합니다. <a href="https://www.markdownguide.org/basic-syntax/" target="_blank"><span style="color:blue">마크다운 다큐멘테이션</span></a> 을 통해 이미지는 물론 BlockQuote나 폰트 사이즈도 쉽게 바꿀수 있습니다.
+### 5. 포스트 내용 삽입을 해줍니다. 마크다운으로 쉽게 콘텐츠 삽입이 가능합니다. <a href="https://www.markdownguide.org/basic-syntax/" target="_blank"><span style="color:blue">마크다운 다큐멘테이션</span></a> 을 통해 이미지는 물론 BlockQuote나 폰트 사이즈도 쉽게 바꿀수 있습니다.
 
-### 7. BlogPost -> vntg-blog 디렉토리에서 npm install을 깔아줍니다. 
+### 6. BlogPost -> vntg-blog 디렉토리에서 npm install을 깔아줍니다. 
 ```
 npm install
 ```
 
-### 8. hexo generate 명령어를 통해 정적 리소스를 생성하고 hexo server 명령어를 통해 로컬 서버에서 테스트 기동을 할 수 있습니다. hexo generate 명령어를 실행하면 public 폴더가 생성되면서 정적 리소스가 생성됩니다. 로컬 서버에서 테스트전에 먼저 hexo generate을 해주어야 합니다.
+### 7. hexo generate 명령어를 통해 정적 리소스를 생성하고 hexo server 명령어를 통해 로컬 서버에서 테스트 기동을 할 수 있습니다. hexo generate 명령어를 실행하면 public 폴더가 생성되면서 정적 리소스가 생성됩니다. 로컬 서버에서 테스트전에 먼저 hexo generate을 해주어야 합니다.
 
 ```
 hexo generate
 hexo server
 ```
 
-### 9. 깃허브 페이지에 배포하기.
+### 8. 깃허브 페이지에 배포하기.
 
 배포하기전 _config.yml파일에 들어가서 배포할 저장소가 맞는지 확인합니다. 저희 공식 기술블로그 repo는 아래와 같습니다. 
 ```
@@ -73,7 +62,7 @@ deploy:
   branch: master
   ```
 
-마지막으로 최종 배포전 정적 리소스를 다시 한번 생성합니다. 이 파일들이 실제로 깃허브 페이지에 배포될 파일들입니다. 
+마지막으로 최종배포전 정적 리소스를 다시 한번 생성합니다. 이 파일들이 실제로 깃허브 페이지에 배포될 파일들입니다. 
 ```
 hexo generate
 ```
@@ -86,7 +75,7 @@ hexo deploy
 hexo clean
 ```
 
-### 10. 깃허브 저장소에 소스 저장하기
+### 9. 깃허브 저장소에 소스 저장하기
 
 위의 배포 과정은 보여지는 페이지를 저장한 것이고, 이제 실제 소스와 이미지들을 깃허브 저장소에 저장해야합니다. 그래야 다른분이 포스트 추가가 가능할테니까요. 아래 코드를 입력하시면 소스들이 처음에 클론 받았던 저장소로 푸쉬된 것을 확인할수 있습니다. 
 

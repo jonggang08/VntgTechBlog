@@ -25,10 +25,12 @@ jobs:
         run: npm i -g hexo workbox-cli
 
       - name: BEFORE_SCRIPT
+        with:
+          theme_token: ${{ secrets.TOKEN_HEXO_THEME }}
         run: |
           git config --global user.name 'chanhee-han'
           git config --global user.email 'chanhee.han@vntgcorp.com'
-          sed -i "s/__GITHUB_TOKEN__/${{ secrets.GITHUB_TOKEN }}/" _config.yml
+          sed -i "s/__GITHUB_TOKEN__/${theme_token}/" _config.yml
           
       - name: THEME_INSTALL
         run: git submodule update --init --remote --recursive

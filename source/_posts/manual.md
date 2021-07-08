@@ -5,7 +5,7 @@ thumbnail: ../../image/gatsbymanual.jpg
 categories: 
 - [Static Site Generator,Gatsby]
 ---
-
+###### 배종강@기술지원실
 # Gatsby 
 
 ## 1.초기설정

@@ -7,6 +7,7 @@ lede: dd
 categories: 
 - [Static Site Generator,Hexo]
 ---
+###### 배종강@기술지원실
 ## 1.초기설정
 
 - Node.js 다운로드

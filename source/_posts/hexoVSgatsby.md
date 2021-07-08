@@ -5,7 +5,7 @@ thumbnail: ../../image/hexogatsby.png
 categories: 
 - [Static Site Generator]
 ---
-
+###### 배종강@기술지원실
 # 1. Setup Process
 ||Hexo|Gatsby|
 |-|-|-|

@@ -5,7 +5,7 @@ thumbnail: ../../image/logo-teal.png
 categories: 
 - [FastAPI]
 ---
-
+###### 까를로스@기술지원실
 ## Intro
 
 최근(이라고 하기에는 좀 시간이 흘렀지만) python framework계에는 다양한 프레임워크들이 속속 시장 진입을 하는 것 같다. 그중에서도 가장 주목을 받는 프레임워크는 아마도 FastAPI 일 것이다. 이름부터가 *빠르다 + API* 이니...이름 만으로도 벌써 반은 먹고 들어가는 기분이다.

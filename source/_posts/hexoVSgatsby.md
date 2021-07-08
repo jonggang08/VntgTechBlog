@@ -1,7 +1,7 @@
 ---
 title: Hexo & Gatsby 차이점(주관적)
 date: 2021-06-03 13:05:46
-thumbnail: https://i.imgur.com/yGnymMq.png
+thumbnail: ../../image/hexogatsby.png
 categories: 
 - [Static Site Generator]
 ---

@@ -1,7 +1,7 @@
 ---
 title: Git의 대표적인 3가지 workflow
 date: 2021-05-31 15:05:46
-thumbnail: "../image/gitgithubgitlab.png"
+thumbnail: ../../image/gitgithubgitlab.png
 categories: 
 - [Git]
 ---

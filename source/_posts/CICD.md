@@ -1,7 +1,7 @@
 ---
 title: 기존 버전관리 및 CICD 현황
 date: 2021-05-31 16:05:46
-thumbnail: ../image/cicd_title.png
+thumbnail: ../../image/cicd_title.png
 categories: 
 - [CICD]
 ---

@@ -1,7 +1,7 @@
 ---
 title: 포스트 추가 방법
 date: 2021-06-09 10:05:46
-thumbnail: https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80
+thumbnail: ../../image/manualthumb.jpg
 categories: 
 - [Static Site Generator]
 ---

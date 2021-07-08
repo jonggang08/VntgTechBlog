@@ -1,7 +1,7 @@
 ---
 title: Gatsby 설치 및 사용 매뉴얼
 date: 2021-06-03 10:05:46
-thumbnail: ../image/gatsbymanual.jpg
+thumbnail: ../../image/gatsbymanual.jpg
 categories: 
 - [Static Site Generator,Gatsby]
 ---

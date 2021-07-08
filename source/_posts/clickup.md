@@ -1,7 +1,7 @@
 ---
 title: ClickUp 유저 매뉴얼
 date: 2021-06-15 16:05:46
-thumbnail: https://www.amocrm.com/static/images/pages/integrations/logo/clickup.png
+thumbnail: ../../image/clickupthumb.png
 categories: 
 - [ClickUp]
 ---

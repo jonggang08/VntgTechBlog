@@ -1,9 +1,9 @@
 ---
 title: FastAPI, WebSocket, 그리고 Docker
 date: 2021-06-30 16:05:46
-thumbnail: ../image/logo-teal.png
+thumbnail: ../../image/logo-teal.png
 categories: 
-- []
+- [FastAPI]
 ---
 
 ## Intro

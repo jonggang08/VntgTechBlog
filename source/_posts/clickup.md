@@ -5,7 +5,7 @@ thumbnail: ../../image/clickupthumb.png
 categories: 
 - [ClickUp]
 ---
-###### @기술지원실
+###### 테디@기술지원실
 -   <p><font size="4"><b><a href="#C1">1. ClickUp 소개</a></b></font></p>
     - ClickUp을 이용하여 할 수 있는 것들
 

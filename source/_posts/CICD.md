@@ -5,7 +5,7 @@ thumbnail: ../../image/cicd_title.png
 categories: 
 - [CICD]
 ---
-###### @기술지원실
+###### TJ@기술지원실
 **<font size="6">소개:</font>**
 
 이 문서는 github, gitlab의 CICD 기능을 테스팅하고 검토하면서 정리한 자료입니다.
